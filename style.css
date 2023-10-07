@@ -1,0 +1,162 @@
+/* CSS Global */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #2E245E;
+    --color-secondary: #37268C;
+
+    --gray-0: #F5F5F5;
+    --gray-50: #828282;
+    --gray-100: #333333;
+}
+
+h1{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+}
+
+h2{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+
+ul{
+    list-style: none;    
+}
+
+/* CSS Global */
+
+/* Inicio CSS Header */
+
+header{
+    display: flex;
+    flex-direction: initial;
+    padding: 12px 8px;
+    box-shadow: 0px 0px 10px 0px gray;
+    margin-bottom: 50px;
+}
+
+nav{
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+}
+
+nav ul li{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Fim CSS Header */
+
+/* Inicio CSS Main */
+
+main{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    gap: 25px;
+}
+
+.products li{
+    flex-basis: 33.333333%;
+    max-width: max-content;
+    width: 250px;
+    overflow: hidden;
+    height: 400px;
+    box-shadow: 0px 0px 2px 2px var(--gray-0);
+}
+
+.products img{
+    position: relative;
+    width: 200px;
+    background-color: var(--gray-0);
+}
+
+.div-information{
+    width: 200px;
+}
+
+.p-tag{
+    padding: 6px 4px;
+    width: 68px;
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.p-value{
+    color: #37268C;
+}
+    
+button{
+    position: relative;
+
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.products li:hover{
+    box-shadow: 0px 0px 2px 2px var(--color-secondary);
+}
+
+section input, button{
+    margin-bottom: 10px;
+}
+
+
+section h3{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    background-color: var(--color-secondary);
+    color: white;
+    text-align: center;
+}
+
+section img{
+    width: 80px;
+    height: 80px;
+}
+
+section li{
+    display: flex;
+    overflow: hidden;
+}
+
+.cart-information{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+section{
+    display: list-item;
+    height: 500px;
+    background-color: var(--gray-0);
+}
+
+.search{
+    outline: none;
+    padding-left: 10px;
+    background-color: var(--gray-0);
+}
